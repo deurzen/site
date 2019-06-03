@@ -1,0 +1,9 @@
+baseURL = "https://deurzen.net/"
+languageCode = "en-us"
+title = "deurzen.net"
+
+[params]
+  Description = "becoming a file"
+  Author = "deurzen"
+  Email = "site+devrzen[at]gmail.com"
+  Giturl = "https://git.deurzen.net/"
