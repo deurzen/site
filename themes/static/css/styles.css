@@ -1,9 +1,26 @@
 /* single-column styling */
 
+@media (max-width: 460px) {
+  .column {
+      width: 80% !important;
+  }
+}
+
+@font-face {
+    font-family: 'Terminus';
+    src: url('../fonts/terminus.ttf') format('ttf'),
+         url('../fonts/terminusttf-4.47.0.woff2') format('woff2'),
+         url('../fonts/terminusttf-4.47.0.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .column {
+    font-family: 'Roboto Slab', serif;
+
     width: 100%;
     max-width: 35em;
-
+    min-width: 10em;
     min-height: 100%;
 
     left: 0;
@@ -11,12 +28,15 @@
     margin: 0 auto;
 
     padding: 20px;
-    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 3px;
 
-    background-color: #f5f5f5;
+    background-color: #ffe6cc;
     color: #000;
+}
 
-    font-family: 'Roboto Slab', serif;
+#content, #main {
+    width: 100%;
 }
 
 /* title/header styling */
@@ -42,14 +62,14 @@ header.header {
     padding-bottom: 10px;
 
     width: 100%;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid #fcdfc7;
 }
 
 .post-summary-header {
     padding-bottom: 10px;
 
     width: 100%;
-    border-top: 1px solid #ededed;
+    border-top: 1px solid #fcdfc7;
 }
 
 .post-title {
@@ -162,7 +182,7 @@ thead tr th {
 }
 
 tbody tr td {
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid #fcdfc7;
 }
 
 tbody tr:last-child td {
@@ -175,22 +195,28 @@ footer.bottom-footer {
     padding-top: 0px;
 
     width: 100%;
-    border-top: 1px solid #ededed;
+    border-top: 1px solid #fcdfc7;
 
-    font-size: 10px;
+    font-size: 12px;
 }
 
 /* code block styling */
 
 pre {
     width: 100%;
-    color: #363743;
-    padding: 20px;
+    color: #000;
+    background-color: #fee3c9;
+
+    padding: 5px 20px 5px 20px;
 
     margin-left: -20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    overflow-x: scroll;
+    overflow: auto;
+}
+
+code {
+    font-family: Terminus, Inconsolata, monospace;
 }
 
 /* general background styling */
@@ -198,10 +224,12 @@ pre {
 * { padding: 0; margin: 0; }
 
 html{
+    width: 100%;
     height: 100%;
-    background-color: #ededed;
+    background-color: #ffdebd;
 }
 body {
+    width: 100%;
     min-height: 100%;
     font-size: 14px;
 }
